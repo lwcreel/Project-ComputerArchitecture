@@ -5,7 +5,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -53,5 +59,144 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(740,390)" to="(740,590)"/>
+    <wire from="(50,370)" to="(50,380)"/>
+    <wire from="(80,380)" to="(390,380)"/>
+    <wire from="(400,460)" to="(520,460)"/>
+    <wire from="(100,340)" to="(340,340)"/>
+    <wire from="(60,590)" to="(60,670)"/>
+    <wire from="(80,570)" to="(80,650)"/>
+    <wire from="(80,570)" to="(570,570)"/>
+    <wire from="(410,190)" to="(510,190)"/>
+    <wire from="(420,440)" to="(520,440)"/>
+    <wire from="(340,250)" to="(340,340)"/>
+    <wire from="(50,370)" to="(80,370)"/>
+    <wire from="(40,360)" to="(70,360)"/>
+    <wire from="(400,560)" to="(430,560)"/>
+    <wire from="(390,210)" to="(390,380)"/>
+    <wire from="(60,350)" to="(80,350)"/>
+    <wire from="(420,500)" to="(430,500)"/>
+    <wire from="(60,350)" to="(60,590)"/>
+    <wire from="(40,380)" to="(50,380)"/>
+    <wire from="(40,340)" to="(50,340)"/>
+    <wire from="(50,350)" to="(60,350)"/>
+    <wire from="(420,440)" to="(420,500)"/>
+    <wire from="(660,670)" to="(800,670)"/>
+    <wire from="(80,380)" to="(80,570)"/>
+    <wire from="(360,440)" to="(420,440)"/>
+    <wire from="(50,340)" to="(50,350)"/>
+    <wire from="(360,450)" to="(410,450)"/>
+    <wire from="(80,370)" to="(80,380)"/>
+    <wire from="(70,360)" to="(70,630)"/>
+    <wire from="(570,610)" to="(610,610)"/>
+    <wire from="(210,470)" to="(320,470)"/>
+    <wire from="(70,630)" to="(70,710)"/>
+    <wire from="(670,350)" to="(710,350)"/>
+    <wire from="(410,450)" to="(520,450)"/>
+    <wire from="(800,390)" to="(800,670)"/>
+    <wire from="(780,390)" to="(780,420)"/>
+    <wire from="(410,450)" to="(410,530)"/>
+    <wire from="(360,460)" to="(400,460)"/>
+    <wire from="(340,340)" to="(340,430)"/>
+    <wire from="(400,460)" to="(400,560)"/>
+    <wire from="(230,210)" to="(320,210)"/>
+    <wire from="(360,200)" to="(380,200)"/>
+    <wire from="(360,180)" to="(380,180)"/>
+    <wire from="(410,530)" to="(430,530)"/>
+    <wire from="(580,690)" to="(610,690)"/>
+    <wire from="(80,650)" to="(610,650)"/>
+    <wire from="(390,380)" to="(400,380)"/>
+    <wire from="(60,670)" to="(520,670)"/>
+    <wire from="(60,590)" to="(520,590)"/>
+    <wire from="(70,360)" to="(80,360)"/>
+    <wire from="(660,590)" to="(740,590)"/>
+    <wire from="(70,710)" to="(520,710)"/>
+    <wire from="(70,630)" to="(520,630)"/>
+    <wire from="(600,570)" to="(610,570)"/>
+    <comp lib="0" loc="(40,360)" name="Pin"/>
+    <comp lib="0" loc="(100,340)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(140,750)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(430,500)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(660,670)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(40,380)" name="Pin"/>
+    <comp lib="2" loc="(560,450)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="4" loc="(850,350)" name="RAM">
+      <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="2" loc="(320,210)" name="Demultiplexer">
+      <a name="select" val="3"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(780,420)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="4" loc="(650,190)" name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </comp>
+    <comp lib="0" loc="(140,800)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(660,590)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(210,470)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(580,690)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="2" loc="(410,190)" name="Multiplexer">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="2" loc="(670,350)" name="Multiplexer">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(570,610)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(430,560)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(430,530)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(40,340)" name="Pin"/>
+    <comp lib="1" loc="(600,570)" name="NOT Gate"/>
+    <comp lib="2" loc="(320,470)" name="Demultiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="select" val="3"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(230,210)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
   </circuit>
 </project>
